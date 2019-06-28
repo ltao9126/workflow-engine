@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/listarea.css"/>
+    <script src="js/flow/jquery.js"></script>
+    <script src="js/flow/jquery.listarea.js"></script>
+    <script src="js/flow/bootstrap.js"></script>
+    <script src="js/flow/bootstrap-dynamic-tabs.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div class="container-fluid" style="width:1000px;height:600px;margin:30px auto;border:1px solid #000;">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="tabbable" id="tabs-950663">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#one" data-toggle="tab">固定属性</a>
+                    </li>
+                    <li>
+                        <a href="#two" data-toggle="tab">属性</a>
+                    </li>
+                    <button class="buttons btn btn-success" onclick="addPros()">添加属性</button>
+                    <button class="btn btn-primary btn-sm" style="width: 50px;height: 40px;float: right;"
+                            onclick="tijiao()">保存
+                    </button>
+                </ul>
+                <div class="choose tab-content">
+                    <div class="tab-pane active " id="one">
+                        <br/> 模块名称:
+                        <input id="model" class="caption form-control" type="text"><br/><br/> 模块类名:
+                        <input id="type" class="class form-control" type="text"><br/><br/> 图标类型:
+                        <input id="icon" class="icon form-control" type="text"><br/><br/> 标识符：
+                        <input id="identifier" class="identity form-control" type="text"><br/><br/>
+                    </div>
+                    <div class="two form tab-pane" id="two">
+                        <br/> 属性名称：
+                        <input id="names" class="proCap form-control" type="text"><br/><br/> 属性性质：
+                        <input id="property" class="pro form-control" type="text"><br/><br/> 展示类型：
+                        <select id="select" class="types form-control">
+                            <option>请选择</option>
+                            <option>INPUT</option>
+                            <option>RADIO</option>
+                            <option>RADIO_TEXT</option>
+                            <option>CHECKBOX</option>
+                            <option>CTRL_CHECKBOX</option>
+                            <option>AJAX_CHECKBOX</option>
+                            <option>NUM</option>
+                            <option>TEL</option>
+                            <option>TEXTAREA</option>
+                            <option>SELECT_INPUT</option>
+                            <option>TREE</option>
+                            <option>AJAX_TREE</option>
+                            <option>AJAX_PAGE</option>
+                        </select><br/><br/> 默认值：
+                        <input id="defaultValue" class="defa form-control" type="text"><br/><br/>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#valuemodal">添加静态属性</button>&nbsp;
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#urlmodal">添加远程请求</button>
+                        <br/><br/>
+                        <!--静态属性值-->
+                        <div class="valuemodal modal fade" id="valuemodal" style="width: 500px; margin: 0 auto;">
+                            <br/>
+                            <div class="modal-header" style="background-color: #337AB7">
+                                <h4 class="modal-title" id="static">添加静态属性</h4>
+                            </div>
+                            <div class=" modal-body" style="background-color: white; margin: 0 auto;">
+                                <table class="valuesInfo" width="350" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>value</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                </table>
+                                <input type="button" value="添加属性" onclick="AddNewValue(event)"/>
+                                <!--<textarea name="listarea" class="listareas value"></textarea>-->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+                            </div>
+                        </div>
+                        <!--远程请求-->
+                        <div class="modal fade urlmodal" id="urlmodal"
+                             style="width: 800px;height: 600px; margin: 0 auto; background-color: white">
+                            <div class="modal-header" style="background-color: #337AB7">
+                                <h4 class="modal-title">添加远程请求</h4>
+                            </div>
+                            <div class="url modal-body" style="width:800px; background-color: white">
+                                <div class="yuancheng url">
+                                    请求类型：
+                                    <select class="requests form-control">
+                                        <option>请选择</option>
+                                        <option>GET</option>
+                                        <option>POST</option>
+                                    </select><br/><br/> 请求路径：
+                                    <input type="text" class="url form-control"/><br/><br/> 请求参数：
+                                    <table width="350" border="0" cellspacing="0" cellpadding="0"
+                                           class="category-table">
+                                        <tr>
+                                            <td>key</td>
+                                            <td>value</td>
+                                            <td>Delete</td>
+                                        </tr>
+                                    </table>
+                                    <input type="button" value="添加参数" onclick="AddNewCategory(event)"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary add-property" data-type="add-property">
+                                        添加
+                                    </button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--clone div-->
+<div class="yuancheng clone-yc" id="yuancheng" style="display:none;">
+    <div class="yuancheng clone-contents" style="background-color: white">
+        请求类型：
+        <select class="requests form-control">
+            <option>请选择</option>
+            <option>GET</option>
+            <option>POST</option>
+        </select><br/><br/> 请求路径：
+        <input type="text" class="url form-control"/><br/><br/> 请求参数：
+        <div>
+            <table width="350" border="0" cellspacing="0" cellpadding="0"
+                   class="category-table">
+                <tr>
+                    <td>key</td>
+                    <td>value</td>
+                    <td>Delete</td>
+                </tr>
+            </table>
+            <input type="button" value="添加参数" onclick="AddNewCategory(event)"/>
+        </div>
+        <button type="button" class="btn btn-primary delete-property"
+                data-type="delete-property">删除远程请求
+        </button>
+        <br/>
+    </div>
+</div>
+<!--动态clone div-->
+<div class="yuancheng" style="display:none;">
+    <div class="yuanchengs clone-content urls quYuan" style="background-color: white">
+        请求类型：
+        <select class="requests form-control">
+            <option>请选择</option>
+            <option>GET</option>
+            <option>POST</option>
+        </select><br/><br/> 请求路径：
+        <input type="text" class="url form-control"/><br/><br/> 请求参数：
+        <div>
+            <table width="350" border="0" cellspacing="0" cellpadding="0"
+                   class="category-table">
+                <tr>
+                    <td>key</td>
+                    <td>value</td>
+                    <td>Delete</td>
+                </tr>
+            </table>
+            <input type="button" value="添加参数" onclick="AddNewCategory(event)"/>
+        </div>
+        <button type="button" class="btn btn-primary delete-property" data-type="delete-property"
+                onclick="deletes(event)">删除远程请求
+        </button>
+        <br/>
+    </div>
+</div>
+<!--静态属性值-->
+<div class="valuemodala modal fade" id="valuemodala" style="width: 500px; margin: 0 auto;">
+    <br/>
+    <div class="modal-header" style="background-color: #337AB7">
+        <h4 class="modal-title">添加静态属性</h4>
+    </div>
+    <div class="jingtai modal-body" style="background-color: white; margin: 0 auto;">
+        <table class="valuesInfo" width="350" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>value</td>
+                <td>Delete</td>
+            </tr>
+        </table>
+        <input type="button" value="添加属性" onclick="AddNewValue(event)"/>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+    </div>
+</div>
+<!--远程请求-->
+<div class="modal fade urlmodal" id="urlmodala"
+     style="width: 800px;height: 600px; margin: 0 auto; background-color: white">
+    <div class="modal-header" style="background-color: #337AB7">
+        <h4 class="modal-title" id="myModalLabel">添加远程请求</h4>
+    </div>
+    <div class="urls modal-body" id="yuanchengd" style="width:800px; background-color: white">
+        <div class="yuancheng urls quYuan">
+            请求类型：
+            <select class="requests form-control">
+                <option>请选择</option>
+                <option>GET</option>
+                <option>POST</option>
+            </select><br/><br/> 请求路径：
+            <input type="text" class="url form-control"/><br/><br/> 请求参数：
+            <table width="350" border="0" cellspacing="0" cellpadding="0"
+                   class="category-table">
+                <tr>
+                    <td>key</td>
+                    <td>value</td>
+                    <td>Delete</td>
+                </tr>
+            </table>
+            <input type="button" value="添加参数" onclick="AddNewCategory(event)"/>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary add-property" data-type="add-property" onclick="tiana(event)">
+                添加
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    /*静态属性模态框*/
+    var jingmotai = function (id) {
+        $('#valuemodala_' + id).modal();
+    }
+
+    var yuanmotais = function (id) {
+        $('#urlmodala_' + id).modal();
+    }
+
+    var tabs = $("ul.nav-tabs");
+    addPros = function () {
+        var count = $(".nav-tabs li").length;
+        var id = new Date().getTime();
+        localStorage.id = id;
+        //静态属性
+        var templ = $('#valuemodala').clone().attr('id', 'valuemodala_' + id);
+        templ.find('.valuesInfo tr:gt(0)').remove();
+        $('body').append(templ);
+        //远程连接
+        var templ1 = $('#urlmodala').clone().attr('id', 'urlmodala_' + id);
+        templ1.find('.yuan ').val("");
+        $('body').append(templ1);
+
+        tabs.addTabs({
+            "id": id,
+            "title": "属性" + count,
+            "content": "<div class='two form tab-pane' id='" + id + "'>" +
+            "<br/>属性名称：<input id='names' class='proCap form-control' type='text'><br/><br/>" +
+            "属性性质:<input id='property' class='pro form-control' type='text'><br/><br/>" +
+            "展示类型：<select id='select' class='types form-control'><option>请选择</option><option>INPUT</option><option>RADIO</option><option>RADIO_TEXT</option><option>CHECKBOX</option><option>CTRL_CHECKBOX</option><option>AJAX_CHECKBOX</option><option>NUM</option><option>TEL</option><option>TEXTAREA</option><option>SELECT_INPUT</option><option>TREE</option><option>AJAX_TREE</option><option>AJAX_PAGE</option></select><br/><br/>" +
+            "默认值：<input id='defaultValue' class='defa form-control' type='text'><br/><br/>" +
+            "<button class='btn btn-primary' data-toggle='modal' onclick='jingmotai(" + id + ")'>添加静态属性</button>&nbsp;" +
+            "<button class='btn btn-primary' data-toggle='modal' onclick='yuanmotais(" + id + ")'>添加远程请求</button>" +
+            "<button class='deletes btn btn-success' onclick='deletes(event," + id + ")'>x</button>" + "</div>"
+        });
+    };
+
+    function deletes(e, id) {
+        e = e || window.event;
+        var tabs = $("ul.nav-tabs");
+        var a = $(e.target).parent();
+        $(a).remove();
+        $('#' + id + "-li").remove();
+    }
+
+    function tijiao() {
+        var ids = localStorage.id;
+        var jid = 'valuemodala_' + ids
+        var yid = 'urlmodala_' + ids
+        var bussCaption = $.trim($(".caption").val());
+        var bussClass = $.trim($(".class").val());
+        var showIcon = $.trim($(".icon").val());
+        var identitys = $.trim($(".identity").val());
+
+        var al = $('.two'),
+            infos = [];
+        for (var r = 0; r < al.length; r++) {
+            var propertyCaption = $(al[r]).find('.proCap').val();
+            var property = $(al[r]).find('.pro').val();
+            var propertyValueType = $(al[r]).find('.types').val();
+            var defaultValue = $(al[r]).find('.defa').val();
+            /*value属性值*/
+            var v = '', vals = [];
+            if (r == 0) {
+                v = $('#valuemodal .valuesInfo tr:gt(0) .adds');
+            } else {
+                v = $('#' + jid + '  .valuesInfo tr:eq(0) .adds');
+            }
+            for (var j = 0; j < v.length; j++) {
+                var val = $(v[j]).val();
+                vals[j] = val;
+            }
+            /*propertyValuesUrl属性值*/
+            var urls,
+                purl = [];
+            if (r == 0) {
+                urls = $('#urlmodal .yuancheng')
+            } else {
+                urls = $('#' + yid + '  .quYuan');
+            }
+            for (var i = 0; i < urls.length; i++) {
+                var req = $(urls[i]).find('.requests').val();
+                var rurl = $(urls[i]).find('.url').val();
+                var parameters = [];
+                var parks = $(urls[i]).find('.category-table tr:gt(0) .keys');
+                var parvs = $(urls[i]).find('.category-table tr:gt(0) .values');
+                for (var k = 0; k < parks.length; k++) {
+                    var park = $(parks[k]).val();
+                    var parv = $(parvs[k]).val();
+                    parameters.push({
+                        'pkey': park,
+                        'pvalue': parv
+                    })
+                }
+                purl.push({
+                    'requestType': req,
+                    'url': rurl,
+                    'parameter': parameters
+                });
+            }
+            infos.push({
+                'propertyCaption': propertyCaption,
+                'property': property,
+                'propertyValueType': propertyValueType,
+                'defaultValue': defaultValue,
+                'propertyValuesUrl': purl,
+                'propertyValues': vals
+            });
+        }
+        var datas = {
+            'bussCaption': bussCaption,
+            'bussClass': bussClass,
+            'showIcon': showIcon,
+            'identify': identitys,
+            'propertyInfos': infos
+        };
+
+        if ($.trim($("#proCap").val()) != '' && $.trim($("#proCap").val()) != null)
+            return false;
+
+        datas = JSON.stringify(datas)
+        console.log(datas);
+        $.post("busActivitySave.do", datas, function (data) {
+            alert('新增业务活动成功')
+            window.location.href = 'index.html'
+        });
+    }
+</script>
+
+</body>
+
+</html>

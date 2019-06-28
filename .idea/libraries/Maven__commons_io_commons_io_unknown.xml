@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Maven: commons-io:commons-io:unknown">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/unknown/commons-io-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/unknown/commons-io-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

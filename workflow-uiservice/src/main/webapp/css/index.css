@@ -1,0 +1,20 @@
+.content{
+  float: left;
+  width: 60%;
+  margin: 2% 0 0 2%;
+}
+.list{
+  float: left;
+  width: 35%;
+  margin: 2% 0 0 2%;
+}
+.content-title{
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.property-info{
+  float: left;
+  padding: 4px;
+  margin: 5px;
+  /*border: 1px solid #2e6da4;*/
+}

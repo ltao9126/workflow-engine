@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流程管理界面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flow.css">
+    <script src="js/flow/jquery.js"></script>
+    <script type="text/javascript" src="js/flow/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="panel panel-primary panel-admin">
+    <div class="panel-heading text-center">
+        <span class="panel-title">业务活动管理界面</span>
+        <button class="btn btn-sm btn-success pull-right admin-btn" onclick="addFlow()">新增</button>
+    </div>
+    <div class="panel-body">
+        <table class="table text-center table-hover" id="flow_list">
+        </table>
+    </div>
+    <div class="page-operation">
+        <span id="page_operation" class="page-total"></span>
+        <form class="form-inline pagination-input ">
+            <label class="font-weight-s page-total">每页显示：<input class="page-size text-center" id="page_size"
+                                                                type="text" onchange="changePageSize(event)">条</label>
+        </form>
+        <ul class="pagination page-total" id="page-ul"></ul>
+        <label class="font-weight-s page-total"><input class="page-size text-center" id="page_turn"
+                                                       type="text" oninput="changePage(event)"></label>
+        <label class="page-total"><input type="button" class="btn btn-primary btn-sm" onclick="getFlowData()"
+                                         value="跳转"></label>
+    </div>
+</div>
+<script src="js/flow/index.js" charset="utf-8"></script>
+</body>
+</html>

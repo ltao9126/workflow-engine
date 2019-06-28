@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<UIConfigInfo bussCaption="接收设备报警" bussClass="com.greatech.workflow.uiservice.service.ReceDevice" showIcon="receive-icon" identify="receiveEquipmentAlarm">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="GET" url="192.168.1.1"/>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="设备类型" property="deviceType" propertyValueType="CHECKBOX" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="GET" url="192.168.1.1"/>
+					<value>设备类型1</value>
+					<value>设备类型2</value>
+					<value>设备类型3</value>
+					<value>设备类型4</value>
+					<value>设备类型5</value>
+					<value>设备类型6</value>
+					<value>设备类型7</value>
+					<value>设备类型8</value>
+					<value>设备类型9</value>
+					<value>设备类型0</value>
+					<value>设备类型A</value>
+					<value>设备类型B</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定设备" property="deviceID" propertyValueType="CHECKBOX" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备1</value>
+					<value>设备2</value>
+					<value>设备3</value>
+					<value>设备4</value>
+					<value>设备5</value>
+					<value>设备6</value>
+					<value>设备7</value>
+					<value>设备8</value>
+					<value>设备9</value>
+					<value>设备0</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定事件类型" property="eventType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>事件类型1</value>
+					<value>事件类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="解除设备报警" bussClass="com.greatech.workflow.uiservice.service.DemoveDevicez" showIcon="remove-icon" identify="removeEquipmentAlarm">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="设备类型" property="deviceType" propertyValueType="AJAX_CHECKBOX" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="GET" url="192.168.1.10"/>
+					<propertyValuesUrl requestType="GET" url="192.168.1.11"/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定设备" property="deviceID" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备1</value>
+					<value>设备2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定事件类型" property="eventType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>事件类型1</value>
+					<value>事件类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="火灾报警" bussClass="com.greatech.workflow.uiservice.service.FireDevice" showIcon="fire-icon" identify="fireAlarm">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="设备类型" property="deviceType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备类型1</value>
+					<value>设备类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定设备" property="deviceID" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备1</value>
+					<value>设备2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定事件类型" property="eventType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>事件类型1</value>
+					<value>事件类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="有毒气体报警" bussClass="com.greatech.workflow.uiservice.service.GasesDevice" showIcon="gases-icon" identify="gasAlarm">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="设备类型" property="deviceType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备类型1</value>
+					<value>设备类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定设备" property="deviceID" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备1</value>
+					<value>设备2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定事件类型" property="eventType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>事件类型1</value>
+					<value>事件类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="周界报警" bussClass="com.greatech.workflow.uiservice.service.ZhouDevice" showIcon="zhou-icon" identify="zhouAlarm">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="设备类型" property="deviceType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备类型1</value>
+					<value>设备类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定设备" property="deviceID" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>设备1</value>
+					<value>设备2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="指定事件类型" property="eventType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>事件类型1</value>
+					<value>事件类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="警情推送" bussClass="com.greatech.workflow.uiservice.service.AlertDevice" showIcon="alert-icon" identify="alertPush">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="用户" property="users" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="服务器地址" property="address" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="内容" property="text" propertyValueType="TEXTAREA" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="客户端交互" bussClass="com.greatech.workflow.uiservice.service.ClientDevice" showIcon="client-icon" identify="clientInteraction">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="交互类型" property="interactionType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>客户端播放视频</value>
+					<value>客户端消息</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="等待回复" property="waitReply" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="网络命令" bussClass="com.greatech.workflow.uiservice.service.inOrderDevice" showIcon="inOrder-icon" identify="intOrder">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="端口" property="port" propertyValueType="NUM" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="命令" property="order" propertyValueType="NUM" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="发送短信" bussClass="com.greatech.workflow.uiservice.service.sendNoteDevice" showIcon="sendNote-icon" identify="sedNote">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="接收人" property="receive" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="短信内容" property="message " propertyValueType="TEXTAREA" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="启动录像" bussClass="com.greatech.workflow.uiservice.service.startVideoDevice" showIcon="startVideo-icon" identify="startVideo">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="位置" property="places" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>地点1</value>
+					<value>地点2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="视屏联动" bussClass="com.greatech.workflow.uiservice.service.createVideoDevice" showIcon="createVideo-icon" identify="createVideo">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="类型" property="types" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>联动类型1</value>
+					<value>联动类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数1" property="parameterOne" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数2" property="parameterTwo" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value/>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="门禁控制" bussClass="com.greatech.workflow.uiservice.service.conDoorDevice" showIcon="conDoor-icon" identify="conDoor">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="类型" property="typess" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>控制类型1</value>
+					<value>控制类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数1" property="parameterOne" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数2" property="parameterTwo" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value/>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="广播控制" bussClass="com.greatech.workflow.uiservice.service.conRadioDevice" showIcon="conRadio-icon" identify="conRadio">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="类型" property="typess" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>控制类型1</value>
+					<value>控制类型2</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数1" property="parameterOne" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="参数2" property="parameterTwo" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="应急控制" bussClass="com.greatech.workflow.uiservice.service.GasesDevice" showIcon="emergency-icon" identify="emergency">
+		<properties>
+			<property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>null</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>自动</value>
+					<value>手动</value>
+				</propertyValues>
+			</property>
+			<property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+				<propertyValues>
+					<propertyValuesUrl requestType="" url=""/>
+					<value>一直等待</value>
+					<value>不等待</value>
+					<value>请手动输入等待时间</value>
+					<value>手动输入框</value>
+				</propertyValues>
+			</property>
+		</properties>
+	</UIConfigInfo>
+	<UIConfigInfo bussCaption="爆炸物" bussClass="explosive" showIcon="explosiveIcon" identify="explosiveArlam">
+		<properties>
+			<property propertyCaption="显示" property="Catiopn" propertyValueType="INPUT" defaultValue="&quot;&quot;">
+				<propertyValues>
+					<value>null</value>
+					<propertyValuesUrl requestType="GET" url="192.168.1.1"/>
+				</propertyValues>
+            </property>
+        </properties>
+    </UIConfigInfo>
+    <UIConfigInfo bussCaption="发送邮件" bussClass="com.greatech.workflow.uiservice.service.sendMailDevice"
+                  showIcon="sendMail-icon" identify="seanMail">
+        <properties>
+            <property propertyCaption="显示" property="Caption" propertyValueType="INPUT" defaultValue="">
+                <propertyValues/>
+            </property>
+            <property propertyCaption="收件人" property="recipient" propertyValueType="INPUT" defaultValue="">
+                <propertyValues/>
+            </property>
+            <property propertyCaption="执行方式" property="executeType" propertyValueType="RADIO" defaultValue="">
+                <propertyValues/>
+            </property>
+            <property propertyCaption="是否等待" property="isWait" propertyValueType="RADIO_TEXT" defaultValue="">
+                <propertyValues/>
+            </property>
+        </properties>
+    </UIConfigInfo>
+</root>

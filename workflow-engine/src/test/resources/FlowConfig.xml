@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+    <flow flowKey="流程名称（全局唯一)"  >
+        <node nodeKey="1" startNode="true:是开始节点，整个流程中有且只有一个，false:非开始节点" endNode="true:结束节点,false:非结束节点">
+            <!--流程中需要操作的业务对象-->
+            <bussObject bussClass="业务对象的类名称">
+                <bussClassConfig>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                    <property key="业务对象类的属性名称" value="对应值"/>
+                </bussClassConfig>
+            </bussObject>
+
+            <!--
+            接收子流程返回结果的处理类
+            需要实现AcceptSubFlowCallback,SubFlowCallback接口,流程驱动器负责注册
+            -->
+            <acceptSubFlow acceptRegisterClass="流程驱动模块注册回调类"
+                           subFlowCallbackDealClass="回调处理类">
+
+            </acceptSubFlow>
+
+            <!--
+                执行结果配置，支持复合结果，此节点不能为空
+                当没有配置条件的时候将使用默认跳转
+                defaultNodeKey必须配置
+            -->
+            <resultObject resultClass="执行结果对象类"
+                          defaultNodeKey="当下面的条件不满足的时或者没配置条件时跳转到的目标节点"
+                          waittime="等待执行结果返回，0：不等待，<0：一直等待，>0等待的最大秒数"
+                          needStartSubFlow="true:需要启动子流程,此时defaultNodeKey无效,subFlow:有效"
+                          startSubFlow="子流程名称">
+                <conditions>
+                    <!--第一个判断条件-->
+                    <condition nodekey="出现本组结果跳转到的目标节点1"
+                               order="条件优先级，数字越小越优先"
+                               needStartSubFlow="true:需要启动子流程"
+                               startSubFlow="子流程名称">
+                        <propterty key="Result.ID" value="100" operation="="/>
+                        <propterty key="执行结果对象的属性名称B" value="" operation=""/>
+                    </condition>
+
+                    <!--第二个条件-->
+                    <condition nodeKey="出现本组结果跳转到的目标节点2"
+                               order="条件优先级，数字越小越优先"
+                               needStartSubFlow="true:需要启动子流程,此时nodeKey无效,subFlow:有效"
+                               startSubFlow="子流程名称">
+                        <propterty key="`" value="" operation=""/>
+                        <propterty key="执行结果对象的属性名称C" value="" operation=""/>
+                    </condition>
+                </conditions>
+            </resultObject>
+        </node>
+    </flow>
+</root>
