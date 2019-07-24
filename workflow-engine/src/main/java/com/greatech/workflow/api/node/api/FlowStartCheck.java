@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by bigbeard on 17-7-28.
  * <p>
  * 流程启动条件检测
  */

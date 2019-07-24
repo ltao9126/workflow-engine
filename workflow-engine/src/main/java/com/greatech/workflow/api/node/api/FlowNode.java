@@ -3,7 +3,6 @@ package com.greatech.workflow.api.node.api;
 import java.io.Serializable;
 
 /**
- * Created by bigbeard on 2017/5/19.
  * 流程对象
  * ----------说明------------
  * 流程业务节点对象接口

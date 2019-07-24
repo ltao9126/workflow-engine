@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by bigbeard on 2017/5/25.
  * 对象工具类
  * 1 获取对象属性名称,属性类型和属性值
  * 2 给对象属性赋值

@@ -24,7 +24,6 @@ import java.util.concurrent.*;
 
 
 /**
- * Created by bigbeard on 2017/5/19.
  * 流程驱动器
  * 当前逻辑为：如果为非等待的情况下
  * 一直循环的取满足条件的节点

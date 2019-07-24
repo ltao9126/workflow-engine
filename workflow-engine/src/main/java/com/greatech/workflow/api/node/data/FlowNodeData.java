@@ -1,7 +1,6 @@
 package com.greatech.workflow.api.node.data;
 
 /**
- * Created by bigbeard on 2017/5/19.
  * 流程传递参数对象,在流程执行过程中对象所携带的内容是会变化的
  */
 public interface FlowNodeData {

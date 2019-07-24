@@ -7,7 +7,6 @@ import java.io.Serializable;
 
 
 /**
- * Created by bigbeard on 2017/5/18.
  * 流程节点配置信息
  */
 public class FlowConfigNode implements Serializable {

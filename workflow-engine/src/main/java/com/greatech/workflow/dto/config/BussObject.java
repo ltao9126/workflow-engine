@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by bigbeard on 2017/5/20.
  * 业务节点
  */
 public class BussObject implements Serializable {
