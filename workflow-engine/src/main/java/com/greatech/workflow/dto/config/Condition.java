@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by bigbeard on 2017/5/20.
  * 条件配置信息
  */
 public class Condition implements Serializable {

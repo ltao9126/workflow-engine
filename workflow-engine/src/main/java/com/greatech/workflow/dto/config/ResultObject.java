@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by bigbeard on 2017/5/20.
  * 结果节点
  */
 public class ResultObject implements Serializable {

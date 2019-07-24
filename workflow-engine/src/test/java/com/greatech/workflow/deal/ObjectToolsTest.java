@@ -6,9 +6,6 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by bigbeard on 2017/5/25.
- */
 public class ObjectToolsTest {
 
     ObjectTools objectTools = new ObjectTools();

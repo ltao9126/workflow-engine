@@ -3,7 +3,6 @@ package com.greatech.workflow.dto;
 import java.io.Serializable;
 
 /**
- * Created by bigbeard on 2017/5/20.
  * 属性配置信息
  */
 public class ClassConfig implements Serializable {

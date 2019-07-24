@@ -3,7 +3,6 @@ package com.greatech.workflow.dto.config;
 import com.greatech.workflow.dto.ClassConfig;
 
 /**
- * Created by bigbeard on 2017/6/27.
  */
 public class ConditionClassConfig extends ClassConfig {
     /**

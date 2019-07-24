@@ -1,7 +1,6 @@
 package com.greatech.workflow.dto.comm;
 
 /**
- * Created by bigbeard on 17-7-6.
  * 运行状态枚举类
  */
 public enum ExecuteState {

@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by bigbeard on 2017/6/27.
  * 配置判断业务对象支持的操作符
  */
 public enum OperateType {

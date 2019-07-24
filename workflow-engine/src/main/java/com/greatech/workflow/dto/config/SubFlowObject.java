@@ -7,7 +7,6 @@ import java.io.Serializable;
 //import com.greatech.workflow.api.node.api.SubFlowCallbackRegister;
 
 /**
- * Created by bigbeard on 17-5-31.
  * <p>
  * 子流程相关信息
  */

@@ -1,7 +1,6 @@
 package com.greatech.workflow.api.node.api;
 
 /**
- * Created by bigbeard on 2017/5/18.
  * <p>
  * 节点回调接口
  */

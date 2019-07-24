@@ -11,7 +11,6 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by bigbeard on 2017/5/25.
  * 对象转换器
  */
 public class NodeConvert implements Serializable {

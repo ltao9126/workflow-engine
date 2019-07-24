@@ -2,9 +2,6 @@ package com.greatech.workflow.api.node.api;
 
 import com.greatech.workflow.dto.config.Condition;
 
-/**
- * Created by bigbeard on 17-7-6.
- */
 public interface FlowResultCheck {
 
     /**

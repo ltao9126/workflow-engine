@@ -1,7 +1,6 @@
 package com.greatech.workflow.dto.comm;
 
 /**
- * Created by bigbeard on 2017/6/27.
  * 配置业务对象的值类型
  */
 public enum PropertyValueType {

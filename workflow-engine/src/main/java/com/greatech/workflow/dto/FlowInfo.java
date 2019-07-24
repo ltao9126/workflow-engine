@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by bigbeard on 2017/5/26.
  * 流程对象,包括一个完整的流程节点
  */
 public class FlowInfo implements Serializable {
