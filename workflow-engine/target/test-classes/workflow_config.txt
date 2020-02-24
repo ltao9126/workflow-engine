@@ -1,0 +1,159 @@
+{
+	"flowKey": "预案5",  //预案唯一标识(预案全局唯一)
+	"startCheckClass": "com.greatech.workflow.imp.FlowStartCheckImpl", //com.greatech.workflow.api.node.api.FlowStartCondition 的实现类 用于检查启动条件
+	"startConditions": [{ //流程启动的预制属性和值集合(启动条件表达式集合)
+		"property": "A",
+		"operaterType": "1",
+		"value": "50"
+	}],
+	"flowTable": { //流程节点集合
+		"n1": { //流程节点名称(流程中唯一)
+			"startNode": true, //是否是启动首节点
+			"subFlowObject": { //当前属性已经弃用 使用节点 startSubFlow启动子流程
+				"subFlowClass": "" 
+			},
+			"nodeKey": "n1", //流程节点名称(流程中唯一)
+			"endNode": false, //是否是结束节点
+			"flowNodeDataContainer": {//结果对象(用作检查满足执行条件的下一个节点)
+				"defaultNodeKey": "",//默认执行的节点名称
+				"resultClass": "com.greatech.workflow.imp.MessageFlowNodeTest", //com.greatech.workflow.dto.config.FlowNodeBranchCondition.FlowResultCheck 的实现类 结果检查对象
+				"resultFlowNodeBranchConditions": [{//该结点运行后 向下分支节点的集合
+					"classConfigs": [{//结果检查 条件表达式集合
+						"property": "A",
+						"operaterType": "1",
+						"value": "60"
+					}],
+					"nodeKey": "n3", //满足条件表达式后 下一个运行的节点
+					"startSubFlow": "预案4", //满足条件表达式后且needStartSubFlow为true 启动的子流程预案唯一标识符
+					"needStartSubFlow": true, //是否启动子流程
+					"conditionExpression": "BaseMessage.alarmLevel==1", //结果检查条件表达式(与resultConditions功能一致，只是提供的条件表达式方式不同)
+					"order": 2 //节点优先级
+				}],
+				"startSubFlow": "", //当前节点子流程预案唯一标识符
+				"needStartSubFlow": false,//当前节点是否启动子流程
+				"waitTime": -1 //等待执行结果时间
+			},
+			"bussObject": { //节点业务属性对象
+				"classConfigList": [{ //业务属性和值集合
+					"property": "phone",
+					"value": "110"
+				}, {
+					"property": "content",
+					"value": "预案5妖兽啊"
+				}],
+				"bussClass": "com.greatech.workflow.imp.MessageFlowNodeTest" //com.greatech.workflow.api.node.api.FlowNode 的实现类类(配置节点具体业务逻辑的实现类)
+			}
+		},
+		"n2": {
+			"startNode": false,
+			"subFlowObject": {
+				"subFlowClass": ""
+			},
+			"nodeKey": "n2",
+			"endNode": true,
+			"flowNodeDataContainer": {
+				"defaultNodeKey": "",
+				"resultClass": "",
+				"resultFlowNodeBranchConditions": [{
+					"classConfigs": [{
+						"property": "A",
+						"operaterType": "1",
+						"value": ""
+					}],
+					"nodeKey": "",
+					"conditionExpression": "1+2=3",
+					"startSubFlow": "",
+					"needStartSubFlow": false,
+					"order": 1
+				}],
+				"waitTime": 0
+			},
+			"bussObject": {
+				"classConfigList": [{
+					"property": "phone",
+					"value": "110"
+				}, {
+					"property": "content",
+					"value": "预案5妖兽又来拉啊"
+				}],
+				"bussClass": "com.greatech.workflow.imp.MessageFlowNodeTest"
+			}
+		},
+		"n3": {
+			"startNode": false,
+			"subFlowObject": {
+				"subFlowClass": ""
+			},
+			"nodeKey": "n3",
+			"endNode": false,
+			"flowNodeDataContainer": {
+				"defaultNodeKey": "",
+				"resultClass": "",
+				"resultFlowNodeBranchConditions": [{
+					"classConfigs": [{
+						"property": "A",
+						"operaterType": "1",
+						"value": "false"
+					}],
+					"nodeKey": "n4",
+					"startSubFlow": "",
+					"conditionExpression": "BaseMessage.alarmType==1",
+					"needStartSubFlow": false,
+					"order": 1
+				}],
+				"waitTime": 0
+			},
+			"bussObject": {
+				"classConfigList": [{
+					"property": "mailAccout",
+					"value": "110@qq.com"
+				}, {
+					"property": "port",
+					"value": "80"
+				}, {
+					"property": "content",
+					"value": "预案5请配合调查"
+				}],
+				"bussClass": "com.greatech.workflow.imp.MailFlowNodeTest"
+			}
+		},
+		"n4": {
+			"startNode": false,
+			"subFlowObject": {
+				"subFlowClass": ""
+			},
+			"nodeKey": "n4",
+			"endNode": true,
+			"flowNodeDataContainer": {
+				"defaultNodeKey": "",
+				"resultClass": "",
+				"resultFlowNodeBranchConditions": [{
+					"classConfigs": [{
+						"property": "A",
+						"operaterType": "1",
+						"value": ""
+					}],
+					"nodeKey": "",
+					"startSubFlow": "",
+					"conditionExpression": "1+2>6",
+					"needStartSubFlow": false,
+					"order": 1
+				}],
+				"waitTime": 0
+			},
+			"bussObject": {
+				"classConfigList": [{
+					"property": "mailAccout",
+					"value": "120@qq.com"
+				}, {
+					"property": "port",
+					"value": "8080"
+				}, {
+					"property": "content",
+					"value": "预案5请再次配合调查"
+				}],
+				"bussClass": "com.greatech.workflow.imp.MailFlowNodeTest"
+			}
+		}
+	}
+}
