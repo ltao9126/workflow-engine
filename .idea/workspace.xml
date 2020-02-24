@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94e988ba-4dd1-4c1d-bc23-20c110969c16" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/inner/api/FlowConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/inner/api/FlowConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowResultCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowResultCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowStartCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/data/BaseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/data/BaseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/data/NotifyNodeExecuteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/data/NotifyNodeExecuteData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/DefaultResultCheckImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/DefaultResultCheckImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/FlowConfigManagerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/FlowConfigManagerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeJsonConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeJsonConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/ObjectTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/ClassConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowConfigNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowExecBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowInfoRuntimeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/OperateType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/ExecuteState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/ExpressionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/FlowEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/PropertyValueType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/PropertyValuesUrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/RefUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/BussObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/Condition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ConditionClassConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ResultObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/SubFlowObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/deal/ObjectToolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/deal/ObjectToolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/FlowStartCheckImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/FlowStartCheckImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/MessageFlowNodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/MessageFlowNodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/resources/FlowConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/resources/FlowConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/resources/jsonFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/resources/jsonFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/src/test/resources/workflow_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/src/test/resources/workflow_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflow-engine/workflow-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/workflow-engine/workflow-engine.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/workflow-engine/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FlowNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperateType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/OperateType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlowNodeBranchCondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNodeBranchCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlowNodeDataContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNodeDataContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/Flow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/ObjectTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeConvert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeConvert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="55" column="87" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlowDriver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="39" column="49" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workflow-engine.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/workflow-engine.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow-engine/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bigbeard</find>
+      <find>notifyExecutor</find>
+      <find>notifyExecStateListener</find>
+      <find>flowConfigNode</find>
+      <find>flowTable</find>
+      <find>propertyType</find>
+      <find>config.filepath</find>
+      <find>command</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowStartCheck.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/AbstractFlowStartCondition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/comm/FlowEnum.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeJsonConfigManager.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/ContentParserApi.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/ObjectTools.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/deal/ObjectToolsTest.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowEngine.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowNode.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowEntry.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowConfigNode.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/AbstractFlowNode.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/Condition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/MessageFlowNodeTest.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/ExpressionUtilsTest.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/pom.xml" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/ExpressionTest.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ConditionClassConfig.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/ClassConfig.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/Term.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/command.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/ConfigParameter.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/Command.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/command/MailCommand.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/command/MassageCommand.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeConvert.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/BussObject.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/BusinessData.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/Condition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/BranchCondition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ResultObject.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/FlowNodeDataContainer.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/FlowNodeBranchCondition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/NodeEntry.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/ExpressionUtils.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowStartCondition.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/enum/FlowEnum.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/FlowEnum.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/Flow.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowNode.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/BusinessData.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowBusinessData.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowBusinessDataContainer.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNode.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowInfoRuntimeData.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/OperateType.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNodeDataContainer.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/Flow.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ObjectTools.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/ObjectTools.java" />
+        <option value="$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowDriver.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\soft\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="workflow-engine" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="workflow-engine" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="greatech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="greatech" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="greatech" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workflow-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94e988ba-4dd1-4c1d-bc23-20c110969c16" name="Default" comment="" />
+      <created>1563952057498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563952057498</updated>
+      <workItem from="1563952060508" duration="40684000" />
+      <workItem from="1564711351021" duration="1093000" />
+      <workItem from="1565083586305" duration="1714000" />
+    </task>
+    <task id="LOCAL-00001" summary="format">
+      <created>1563952347117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563952347117</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add dependence">
+      <created>1565083701283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565083701285</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43491000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.14102565" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.14396456" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.1904762" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="0" />
+      <window_info content_ui="combo" x="787" y="49" width="346" height="951" id="Project" order="5" visible="true" weight="0.19509594" />
+      <window_info anchor="right" id="Database" order="2" weight="0.16897655" />
+      <window_info anchor="right" id="SciView" order="10" weight="0.32959402" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" show_stripe_button="false" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="5" show_stripe_button="false" weight="0.32995737" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.18272425" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" />
+      <window_info anchor="bottom" id="Find" order="6" visible="true" weight="0.18715394" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="format" />
+    <MESSAGE value="add dependence" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependence" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/AbstractFlowStartCondition.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/RefUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/ContentParserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/deal/ObjectToolsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/resources/jsonFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2586" selection-start-line="1" selection-start-column="2586" selection-end-line="1" selection-end-column="2586" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/AbstractFlowNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowStartCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/Condition.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/FlowStartCheckImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3006">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1156">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.5.7/groovy-2.5.7-sources.jar!/groovy/util/GroovyScriptEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.5.7/groovy-2.5.7.jar!/groovy/util/GroovyScriptEngine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/ExpressionUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/ExpressionTest.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/ConditionClassConfig.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/ClassConfig.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/Term.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/data/BaseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/MessageFlowNodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="93" column="72" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/DefaultResultCheckImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/resources/configer.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeJsonConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/test/java/com/greatech/workflow/imp/MailFlowNodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/ConfigParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/command/MailCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/command/MassageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/BussObject.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/config/SubFlowObject.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/FlowEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/aviator/aviator/2.2.1/aviator-2.2.1.jar!/com/googlecode/aviator/AviatorEvaluator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/aviator/aviator/2.2.1/aviator-2.2.1-sources.jar!/com/googlecode/aviator/AviatorEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="534" column="56" lean-forward="true" selection-start-line="534" selection-start-column="35" selection-end-line="534" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/ExpressionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/api/node/api/FlowStartCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/FlowEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowBusinessDataContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowInfoRuntimeData.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNodeBranchCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNodeDataContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/FlowNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/flowInfo/Flow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/FlowExecBean.java" />
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/OperateType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/dto/commom/ObjectTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/deal/NodeConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="55" column="87" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/workflow-engine.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow-engine/src/main/java/com/greatech/workflow/service/FlowDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
